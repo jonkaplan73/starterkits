@@ -14,7 +14,7 @@ CreateRandomSwissPlot <- function(filePath){
     logging::loginfo(paste("Point selected:",point$x,point$y))
     
     swiAPI <- SwiPtApiClient$new()
-    response <- swiAPI$SearchAroundPoint(lat = point$x,long = point$y)
+    response <- swiAPI$SearchAroundPoint(lati = point$x,longi = point$y)
     
     logging::loginfo("Making plot")
     

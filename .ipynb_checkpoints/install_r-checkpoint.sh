@@ -1,0 +1,1 @@
+R CMD INSTALL swiptapi-r
