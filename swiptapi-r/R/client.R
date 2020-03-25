@@ -4,7 +4,7 @@
 #' @references (https://transport.opendata.ch/)
 #' @importFrom logging loginfo
 #' @importFrom httr GET
-#' @importFrom jsonlite fromJson
+#' @importFrom jsonlite fromJSON
 #' @export
 SwiPtApiClient <- R6::R6Class(
     classname = "swiptapi",

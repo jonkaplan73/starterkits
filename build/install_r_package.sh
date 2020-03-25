@@ -9,7 +9,7 @@
 # failure is a natural part of life
 set -e
 
-SOURCE_DIR=$(pwd)/swiptapi-r
+SOURCE_DIR=$(pwd)/../swiptapi-r
 
 pushd ${SOURCE_DIR}
     

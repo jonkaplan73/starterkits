@@ -1,6 +1,27 @@
+# imports
 import logging
 from random import sample
 import numpy as np
+import folium
+from swiptapi import swiptapi_client
+
+def create_random_swiss_plot(file_path: str):
+
+    point = get_random_swiss_point()
+
+    logging.info("Point selected:" + str(point['x']) + str(point['y']))
+
+    sc = swiptapi_client()
+    response = sc.search_around_point(lati=point['x'],longi=point['y'])
+
+    logging.info("Making plot")
+
+    my_map = folium.Map(location=[46.801111,8.226667],zoom_start = 8)
+    for poi in response['stations']:
+        if poi['coordinate']['x'] is not None:
+            folium.Marker([poi['coordinate']['x'],poi['coordinate']['y']], popup = poi['name']).add_to(my_map)
+
+    my_map.save(outfile=file_path)
 
 def get_random_swiss_point():
     """
