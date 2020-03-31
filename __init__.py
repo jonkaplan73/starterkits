@@ -1,2 +1,0 @@
-from .functions import create_random_swiss_plot
-from .functions import get_random_swiss_point
