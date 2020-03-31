@@ -1,19 +1,10 @@
-#!/bin/bash
-
-# [description]
-#     Install an R package from source
-# [usage]
-#     ./build/install_r_package.sh
-# 
-
-# failure is a natural part of life
 set -e
 
 SOURCE_DIR=$(pwd)/../swiptapi-r
 
 pushd ${SOURCE_DIR}
-    
-    Rscript -e "devtools::document()"
+
+	Rscript -e 'devtools::install_deps(".")'
     R CMD INSTALL \
         --no-docs \
         .

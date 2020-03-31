@@ -1,12 +1,3 @@
-#!/bin/bash
-
-# [description]
-#     Install a Python package from source
-# [usage]
-#     ./build/install_py_package.sh
-#
-
-# failure is a natural part of life
 set -e
 
 SOURCE_DIR=$(pwd)/../swiptapi-py
