@@ -6,6 +6,9 @@ import folium
 from swiptapi import swiptapi_client
 
 def create_random_swiss_plot(file_path: str):
+    """
+    Uses the other functions in the swiptapi package to create a plot of busses in Switzerland
+    """
 
     point = get_random_swiss_point()
 
