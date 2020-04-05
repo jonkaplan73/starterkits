@@ -1,6 +1,6 @@
 #' @title Create Random Swiss Plot
 #' @name CreateRandomSwissPlot
-#' @description Uses the other functions in the swiptapi package to create a plot of busses in Switzerland
+#' @description Uses the other functions in the swiptapi package to create a plot of busses in Switzerland.
 #' 
 #' @param filePath The full qualified path at which to write the plot
 #' @importFrom leaflet leaflet addTiles addMarkers
@@ -35,7 +35,6 @@ CreateRandomSwissPlot <- function(filePath){
 #' @name GetRandomSwissPoint
 #' @description Uses basic math to pick a point in a circle that roughly approximates Switzerland
 #' 
-#' @param filePath The full qualified path at which to write the plot
 #' @return a named list of x and y lat/long coordinates
 #' 
 #' @importFrom logging loginfo

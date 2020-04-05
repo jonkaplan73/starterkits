@@ -10,5 +10,5 @@ CreateRandomSwissPlot(filePath)
 \item{filePath}{The full qualified path at which to write the plot}
 }
 \description{
-Uses the other functions in the swiptapi package to create a plot of busses in Switzerland
+Uses the other functions in the swiptapi package to create a plot of busses in Switzerland.
 }

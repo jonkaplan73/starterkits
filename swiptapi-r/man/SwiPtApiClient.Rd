@@ -21,19 +21,34 @@ An object to streamline interactions with the Swiss Public Transit API.
 \if{html}{\out{<a id="method-new"></a>}}
 \if{latex}{\out{\hypertarget{method-new}{}}}
 \subsection{Method \code{new()}}{
+Create a swiptapi API client
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{SwiPtApiClient$new()}\if{html}{\out{</div>}}
 }
 
+\subsection{Returns}{
+Returns a initialized API client
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-SearchAroundPoint"></a>}}
 \if{latex}{\out{\hypertarget{method-SearchAroundPoint}{}}}
 \subsection{Method \code{SearchAroundPoint()}}{
+Searches for Points of Interest around submitted lat/long pair
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{SwiPtApiClient$SearchAroundPoint(lati, longi)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{lati}}{The latitude around which to search for points of interest}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Returns a cleaned dictionary of points of interest
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-clone"></a>}}

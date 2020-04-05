@@ -1,6 +1,8 @@
 import logging
 import requests
 
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s] {%(filename)s} %(levelname)s - %(message)s')
+
 class swiptapi_client:
 	"""
 	An object to streamline interactions against the Swiss Public Transit API.

@@ -3,8 +3,7 @@ Type: Package
 Title: swiptapi
 Version: 0.0.1
 Authors@R: c(
-    person("Theodore", "Bakanas", email = "tedbakanas@gmail.com", role = c("aut","cre")),
-    person("Zhi", "Lu", email = "lvzhi0522@gmail.com", role = c("aut"))
+    person("Theodore", "Bakanas", email = "tedbakanas@gmail.com", role = c("aut","cre"))
     )
 Maintainer: Theodore Bakanas <tedbakanas@gmail.com>
 Description: A simple package for hitting the open Swiss Public Transit API.
@@ -16,7 +15,6 @@ Imports:
     jsonlite,
     leaflet,
     logging,
-    optparse,
     R6
 Suggests:
 License: file LICENSE

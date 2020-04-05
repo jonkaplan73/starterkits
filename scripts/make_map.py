@@ -2,12 +2,9 @@ import argparse
 import logging
 from swiptapi import create_random_swiss_plot
 
-# Set logger
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s] {%(filename)s} %(levelname)s - %(message)s')
-
 def main(output_dir: str):
 	
-	filename = "super_cool_map.html"
+	filename = "super_cool_map_py.html"
 	filepath = output_dir + filename
 
 	logging.info("Creating a map at:" + filepath)

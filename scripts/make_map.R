@@ -12,7 +12,7 @@ opts <- optparse::parse_args(
 )
 
 # make a filename and a path
-filename <- "super_cool_map.html"
+filename <- "super_cool_map_R.html"
 filepath <- file.path(opts$output_dir,filename)
 
 logging::loginfo(paste("Creating a map at:",filepath))

@@ -5,6 +5,8 @@ import numpy as np
 import folium
 from swiptapi import swiptapi_client
 
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s] {%(filename)s} %(levelname)s - %(message)s')
+
 def create_random_swiss_plot(file_path: str):
     """
     Uses the other functions in the swiptapi package to create a plot of busses in Switzerland
@@ -30,7 +32,7 @@ def get_random_swiss_point():
     """
     Uses basic math to pick a point in a circle that roughly approximates Switzerland
     """
-    
+
     logging.info("Switzerland doesn't really look like a circle but thats ok!")
     
     swi_center_x = 46.801111

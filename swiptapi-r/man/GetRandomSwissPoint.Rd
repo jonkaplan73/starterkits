@@ -6,9 +6,6 @@
 \usage{
 GetRandomSwissPoint()
 }
-\arguments{
-\item{filePath}{The full qualified path at which to write the plot}
-}
 \value{
 a named list of x and y lat/long coordinates
 }

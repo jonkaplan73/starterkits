@@ -19,7 +19,7 @@ setup(
     author_email="tedbakanas@gmail.com",
     license=license,
     packages=["swiptapi"],
-    install_requires=[],
+    install_requires=["requests","numpy","folium"],
     include_package_data=True,
     zip_safe=False,
     classifiers=[
@@ -27,5 +27,5 @@ setup(
         "Operating System :: OS Independent",
         "Development Status :: 2 - Pre-Alpha",
     ],
-    python_requires='>=3.6'
+    python_requires='>=3'
 )

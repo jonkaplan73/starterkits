@@ -9,9 +9,16 @@
 SwiPtApiClient <- R6::R6Class(
     classname = "swiptapi",
     public = list(
+
+        #' @description Create a swiptapi API client
+        #' @return Returns a initialized API client
         initialize = function(){
             logging::loginfo("Client initialized")
         },
+
+        #' @description Searches for Points of Interest around submitted lat/long pair
+        #' @param lati The latitude around which to search for points of interest
+        #' @return Returns a cleaned dictionary of points of interest
         SearchAroundPoint = function(lati,longi){
             query <- private$ConstructPostitionalSearchQuery(lati,longi)
             return(private$GetAndCleanRequest(query))
